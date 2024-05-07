@@ -1,0 +1,3 @@
+#4c7ce3   blue
+#3d4356   dark
+#ffffff   white
