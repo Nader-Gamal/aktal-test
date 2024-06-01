@@ -24,7 +24,16 @@
     ></script>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style ng.css" />
-
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
     <!-- 
     - google font link
   -->
@@ -102,6 +111,11 @@
                   target="_blank"
                 >
                   <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-top-social-link" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
                 </a>
               </li>
             </ul>
@@ -558,8 +572,12 @@
             <!-- next prev -->
 
             <div class="arrows">
-              <button id="prev" class="text-center"><</button>
-              <button id="next" class="text-center">></button>
+              <button id="prev" class="text-center">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <button id="next" class="text-center">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
             </div>
             <!-- time running -->
             <div class="time"></div>
@@ -589,15 +607,15 @@
                 <div class="row-1">
                   <li class="about-item">
                     <div class="about-item-icon">
-                      <ion-icon name="home-outline"></ion-icon>
+                      <i class="fa-solid fa-shield-halved icon-col"></i>
                     </div>
 
-                    <p class="about-item-text pt-2">الرفاهية</p>
+                    <p class="about-item-text pt-2">المصداقية</p>
                   </li>
 
                   <li class="about-item">
                     <div class="about-item-icon">
-                      <ion-icon name="leaf-outline"></ion-icon>
+                      <i class="fa-solid fa-medal icon-col"></i>
                     </div>
 
                     <p class="about-item-text pt-2 quality">الجودة</p>
@@ -607,7 +625,7 @@
                 <div class="row-2">
                   <li class="about-item">
                     <div class="about-item-icon">
-                      <ion-icon name="wine-outline"></ion-icon>
+                      <i class="fa-regular fa-handshake icon-col"></i>
                     </div>
 
                     <p class="about-item-text pt-2">الاحترافية</p>
@@ -615,9 +633,8 @@
 
                   <li class="about-item">
                     <div class="about-item-icon">
-                      <ion-icon name="shield-checkmark-outline"></ion-icon>
+                      <i class="fa-solid fa-bullseye icon-col"></i>
                     </div>
-
                     <p class="about-item-text pt-2">الدقة</p>
                   </li>
                 </div>
@@ -656,7 +673,7 @@
           <div class="contain">
             <p class="section-subtitle">خدماتنا</p>
 
-            <h2 class="h2 section-title">خدماتنا</h2>
+            <h2 class="h2 section-title">حلول متكاملة لجميع احتياجاتك</h2>
 
             <ul class="service-list">
               <li>
@@ -666,7 +683,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">البيع وادارة المشروعات</a>
+                    <a href="./contact.html">البيع وادارة المشروعات</a>
                   </h3>
 
                   <p class="card-text">
@@ -692,7 +709,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">التسويق</a>
+                    <a href="./contact.html">التسويق</a>
                   </h3>
 
                   <p class="card-text">
@@ -717,7 +734,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#property">استشارة عقارية </a>
+                    <a href="./contact.html">استشارة عقارية </a>
                   </h3>
 
                   <p class="card-text">
@@ -879,16 +896,9 @@
 
             <h2 class="h2 section-title">اماكن تواجدنا</h2>
 
-            <ul class="blog-list has-scrollbar w-100">
-              <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=1O0lB5qFfJ74bdY4rLqJCSbcjnC33DUA&ehbc=2E312F&noprof=1"
-                width="100%"
-                height="480"
-              ></iframe>
-            </ul>
+            <div id="map"></div>
           </div>
         </section>
-
         <!-- 
         - #CTA
       -->
@@ -1009,6 +1019,11 @@
                   <ion-icon name="logo-youtube"></ion-icon>
                 </a>
               </li>
+              <li>
+                <a href="#" class="header-top-social-link" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -1115,11 +1130,10 @@
       </div>
     </footer>
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS map  -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="./assets/js/map.js"></script>
 
     <!-- 
     - ionicon link
@@ -1132,5 +1146,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

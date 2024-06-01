@@ -2259,3 +2259,21 @@ a {
   right: 5%;
   font-size: 14px;
 }
+#map {
+  margin: auto;
+  z-index: 1;
+  height: 550px;
+}
+.leaflet-marker-icon span {
+  background-color: #4c7ce3 !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+}
+.marker-cluster-small {
+  background-color: transparent !important;
+}
+.progress {
+  bottom: 0%;
+}
