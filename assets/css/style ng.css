@@ -898,6 +898,8 @@ a {
 \*-----------------------------------*/
 
 .about {
+  width: 80%;
+  margin: auto;
   padding-block: var(--section-padding);
 }
 

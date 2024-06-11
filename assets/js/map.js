@@ -1,15 +1,19 @@
 // Initialize the map centered on Saudi Arabia
 var map = L.map("map").setView([24.7136, 46.6753], 6);
 
-// Add a tile layer
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 18,
-  attribution: "© OpenStreetMap contributors",
-}).addTo(map);
+// Add a Carto Voyager tile layer
+L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  {
+    maxZoom: 18,
+    attribution:
+      '&copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+  }
+).addTo(map);
 
 // Define a blue icon for markers
 var blueIcon = L.icon({
-  iconUrl: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png", // Example blue marker icon URL
+  iconUrl: "./assets/images/pinPoint.png",
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
 });
@@ -40,6 +44,7 @@ group1.addLayer(
     "Group 1, Marker 4"
   )
 );
+
 // Add markers to group2
 group2.addLayer(
   L.marker([24.8436, 47.7053], { icon: blueIcon }).bindPopup(
@@ -75,12 +80,12 @@ group3.addLayer(
 );
 group3.addLayer(
   L.marker([23.8936, 49.7553], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 3"
+    "Group 3, Marker 4"
   )
 );
 group3.addLayer(
   L.marker([23.9936, 49.7553], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 3"
+    "Group 3, Marker 5"
   )
 );
 
