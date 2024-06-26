@@ -1,4 +1,3 @@
-// Initialize the map centered on Saudi Arabia
 var map = L.map("map").setView([24.7136, 46.6753], 6);
 
 // Add a Carto Voyager tile layer
@@ -93,3 +92,45 @@ group3.addLayer(
 map.addLayer(group1);
 map.addLayer(group2);
 map.addLayer(group3);
+
+// Create custom control with radio buttons
+var customControl = L.Control.extend({
+  options: {
+    position: "topright",
+  },
+  onAdd: function (map) {
+    var container = L.DomUtil.create("div", "custom-control");
+
+    container.innerHTML = `
+          <div class="option ps-4"><input type="radio" name="group" id="available" /><label for="available"><span class="square available"></span> متاح</label></div>
+          <div class="option"><input type="radio" name="group" id="sold" /><label for="sold"><span class="square sold"></span> مباع</label></div>
+          <div class="option"><input type="radio" name="group" id="all" checked /><label for="all"><span class="square all"></span> الكل</label></div>
+        `;
+
+    return container;
+  },
+});
+
+// Add custom control to map
+map.addControl(new customControl());
+
+// Function to handle radio button changes
+document
+  .querySelector(".custom-control")
+  .addEventListener("change", function (e) {
+    if (e.target.name === "group") {
+      if (e.target.id === "available") {
+        map.addLayer(group1);
+        map.removeLayer(group2);
+        map.removeLayer(group3);
+      } else if (e.target.id === "sold") {
+        map.removeLayer(group1);
+        map.addLayer(group2);
+        map.removeLayer(group3);
+      } else if (e.target.id === "all") {
+        map.addLayer(group1);
+        map.addLayer(group2);
+        map.addLayer(group3);
+      }
+    }
+  });

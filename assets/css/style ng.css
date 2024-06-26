@@ -2057,9 +2057,12 @@ a {
   /**
    * REUSED STYLE
    */
-
   .contain {
     max-width: 1200px;
+  }
+  .header-bottom .contain,
+  .header-top .contain {
+    max-width: 1500px;
   }
 
   .has-scrollbar > li {
@@ -2276,6 +2279,93 @@ a {
 .marker-cluster-small {
   background-color: transparent !important;
 }
+.custom-control {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.custom-control .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.custom-control .option:last-child {
+  margin-bottom: 0;
+}
+.custom-control .square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.available {
+  background-image: url(./../../assets/images/pinPoint.png);
+  background-size: cover;
+}
+.sold {
+  background-image: url(./../../assets/images/pinPoint.png);
+  background-size: cover;
+}
+.all {
+  background-image: url(./../../assets/images/pinPoint.png);
+  background-size: cover;
+}
 .progress {
   bottom: 0%;
+}
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+.progAvil {
+  background-color: #211c4f;
+}
+@font-face {
+  font-family: "majalla.ttf";
+  src: url("../fonts/majalla.ttf") format("ttf"),
+    url("../fonts/majalla.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "majalla.ttf", "Courier New", Courier, monospace;
+}
+li {
+  font-family: "majalla.ttf", sans-serif;
+}
+
+a {
+  font-family: "majalla.ttf", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "majalla.ttf", sans-serif;
+}
+
+a,
+img,
+span,
+button {
+  font-family: "majalla.ttf", sans-serif;
+}
+
+button {
+  font-family: "majalla.ttf", sans-serif;
+}
+
+address {
+  font-style: normal;
+  font-family: "majalla.ttf", sans-serif;
+}
+
+body {
+  font-family: "majalla.ttf", sans-serif;
+}
+* {
+  font-family: "majalla.ttf", sans-serif;
 }
