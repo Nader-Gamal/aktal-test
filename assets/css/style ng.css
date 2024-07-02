@@ -481,14 +481,15 @@ a {
   color: var(--cadet);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
-  text-transform: uppercase;
   padding-block: 15px;
+  border-bottom: 2px solid transparent;
 }
 
-.navbar-link:is(:hover, :focus) {
+.navbar-link:hover {
   color: var(--orange-soda);
+  border-bottom: 2px solid var(--orange-soda);
+  transition: none;
 }
-
 .overlay {
   position: fixed;
   inset: 0;
@@ -2320,6 +2321,35 @@ a {
 .progAvil {
   background-color: #211c4f;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.whatsapp-button a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-button a ion-icon {
+  margin-right: 10px;
+}
+.progress,
+.progress-stacked {
+  border-radius: 0% !important;
+  --bs-progress-height: 2rem;
+}
+
 @font-face {
   font-family: "majalla.ttf";
   src: url("../fonts/majalla.ttf") format("ttf"),
