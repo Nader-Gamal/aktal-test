@@ -540,6 +540,10 @@ a {
 .dropdown-toggle::after {
   display: none !important;
 }
+.offcanvas {
+  z-index: 999999;
+  direction: ltr;
+}
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -818,7 +822,7 @@ a {
 
 .carousell .time {
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   width: 0%;
   height: 3px;
   background-color: #4c7ce3;
@@ -1644,6 +1648,22 @@ a {
   color: var(--orange-soda);
 }
 
+.hidden {
+  display: none;
+}
+
+#loader {
+  margin-top: 20px;
+  font-size: 18px;
+  color: blue;
+}
+
+#thanksMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -2077,6 +2097,9 @@ a {
     padding-block: 30px;
   }
 
+  .mob-nav {
+    display: none;
+  }
   .header-bottom-actions-btna:last-child,
   .navbar-top,
   .overlay {
@@ -2120,6 +2143,7 @@ a {
     box-shadow: 0 10px 50px hsla(237, 71%, 52%, 0.2);
     animation: slideDown 0.25s ease-out forwards;
   }
+
   @keyframes slideDown {
     0% {
       transform: translateY(0);
@@ -2194,6 +2218,7 @@ a {
     justify-content: center;
     align-items: center;
   }
+
   .hero {
     padding-block: 50px;
   }
@@ -2254,7 +2279,10 @@ a {
     padding-right: 1.5rem;
   }
   .about iframe {
-    width: 450px !important;
+    width: 400px !important;
+  }
+  .mob-nav {
+    display: block !important;
   }
 }
 

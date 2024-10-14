@@ -103,6 +103,7 @@
             <li>
               <a
                 href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                traget="_blank"
                 class="header-top-social-link"
                 target="_blank"
               >
@@ -114,15 +115,88 @@
       </div>
     </div>
 
-    <div class="header-bottom shadow">
+    <div class="header-bottom">
       <div class="contain">
-        <a href="./index.html" class="logo">
-          <img
-            src="./assets/images/aktal logo.png"
-            alt="aktal logo"
-            width="150px"
-          />
-        </a>
+        <div
+          href="#"
+          class="d-flex justify-content-between flex-row flex-nowrap mobhead"
+        >
+          <a href="./index.html">
+            <img
+              src="./assets/images/aktal logo.png"
+              alt="aktal logo"
+              width="150px"
+          /></a>
+          <a
+            class="btn mob-nav"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div
+            class="offcanvas-header bg-light sub-nav flex justify-content-end"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div>
+            <div class="nav-contain">
+              <ul class="mob-nav-items">
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-house pt-1 pe-4 text-color"></i>
+                  <a href="./index.html"><p class="text-dark">الرئيسية</p></a>
+                </li>
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-list pt-1 pe-4 text-color"></i>
+                  <a href="./index.html#about"
+                    ><p class="text-dark">من نحن</p></a
+                  >
+                </li>
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-store pt-1 pe-4 text-color"></i>
+                  <a href="./index.html#service"
+                    ><p class="text-dark">الخدمات</p></a
+                  >
+                </li>
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-copyright pt-1 pe-4 text-color"></i>
+                  <a href="./offers.html"><p class="text-dark">العروض</p></a>
+                </li>
+              </ul>
+
+              <ul class="mob-nav-items">
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                  <a href="./index.html#blog"
+                    ><p class="text-dark">اماكن تواجدنا</p></a
+                  >
+                </li>
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i
+                    class="fa-solid fa-headphones-simple pt-1 pe-4 text-color"
+                  ></i>
+                  <a href="./contact.html"
+                    ><p class="text-dark">تواصل معنا</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
@@ -147,22 +221,15 @@
           <div class="navbar-bottom">
             <ul class="navbar-list">
               <li>
-                <a href="./index.html#hero" class="navbar-link" data-nav-link
-                  >الرئيسية</a
-                >
+                <a href="#hero" class="navbar-link" data-nav-link>الرئيسية</a>
               </li>
 
               <li>
-                <a href="./index.html#about" class="navbar-link" data-nav-link
-                  >من نحن</a
-                >
+                <a href="#about" class="navbar-link" data-nav-link>من نحن</a>
               </li>
 
               <li>
-                <a
-                  href="./index.html#service"
-                  class="navbar-link"
-                  data-nav-link
+                <a href="#service" class="navbar-link" data-nav-link
                   >الخدمات</a
                 >
               </li>
@@ -174,7 +241,7 @@
               </li>
 
               <li>
-                <a href="./index.html#blog" class="navbar-link" data-nav-link
+                <a href="#blog" class="navbar-link" data-nav-link
                   >اماكن تواجدنا</a
                 >
               </li>
@@ -187,26 +254,8 @@
             </ul>
           </div>
         </nav>
-
-        <div class="header-bottom-actions">
-          <button class="header-bottom-actions-btna" aria-label="Profile">
-            <a href="tel:+966920033262">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <span>اتصل بنا</span></a
-            >
-          </button>
-
-          <button class="header-bottom-actions-btna" aria-label="fav">
-            <ion-icon name="heart-outline"></ion-icon>
-
-            <span>اتصل بنا</span>
-          </button>
-        </div>
-      </div>
     </div>
   </header>
-
 <!-- 
   <section class="property" id="property">
     <div class="contain">
