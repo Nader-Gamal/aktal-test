@@ -2457,12 +2457,6 @@ body {
   margin: 0px;
 }
 
-@media (max-width: 360px) {
-  .nav-bottom {
-    width: 320px;
-  }
-}
-
 .whatsapp-button {
   display: flex;
   justify-content: center;
@@ -2484,8 +2478,8 @@ body {
 .circle-anime {
   display: flex;
   position: absolute;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 60px;
   height: 60px;
   top: 15px;
