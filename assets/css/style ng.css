@@ -11,10 +11,10 @@
    * colors
    */
 
-  --dark-jungle-green: hsl(188, 63%, 7%);
-  --prussian-blue: hsl(200, 69%, 14%);
-  --raisin-black-1: hsl(227, 29%, 13%);
-  --raisin-black-2: hsl(229, 17%, 19%);
+  --dark-jungle-green: #211c4f;
+  --prussian-blue: #211c4f;
+  --raisin-black-1: #211c4f;
+  --raisin-black-2: #211c4f;
   --yellow-green: hsl(89, 72%, 45%);
   --orange-soda: #4c7ce3;
   --cultured-1: hsl(0, 0%, 93%);
@@ -71,45 +71,59 @@
 \*-----------------------------------*/
 
 .tajawal-extralight {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-light {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-regular {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-medium {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-bold {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-extrabold {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .tajawal-black {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 /*-----------------------------------*\
@@ -126,12 +140,12 @@
 
 li {
   list-style: none;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 a {
   text-decoration: none;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 a,
@@ -140,7 +154,7 @@ span,
 button,
 ion-icon {
   display: block;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 button {
@@ -149,12 +163,12 @@ button {
   font: inherit;
   text-align: left;
   cursor: pointer;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 address {
   font-style: normal;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 ion-icon {
@@ -162,7 +176,7 @@ ion-icon {
 }
 
 html {
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -170,7 +184,7 @@ body {
   background: var(--white);
   overflow-x: hidden;
   direction: rtl;
-  font-size: "Tajawal", sans-serif;
+  font-size: "Cairo", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -2053,7 +2067,7 @@ a {
   }
 
   .footer-link-box {
-    flex-basis: 550px;
+    flex-basis: 50%;
   }
 }
 
@@ -2195,7 +2209,7 @@ a {
   }
 
   .footer-link-box {
-    flex-basis: 700px;
+    flex-basis: 50%;
   }
 }
 * {
@@ -2350,51 +2364,21 @@ a {
   background-color: #211c4f;
 }
 
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #25d366; /* WhatsApp green */
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Ensure it's above other content */
-}
-
-.whatsapp-button a {
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.whatsapp-button a ion-icon {
-  margin-right: 10px;
-}
 .progress,
 .progress-stacked {
   border-radius: 0% !important;
   --bs-progress-height: 2rem;
 }
 
-@font-face {
-  font-family: "majalla.ttf";
-  src: url("../fonts/majalla.ttf") format("ttf"),
-    url("../fonts/majalla.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: "majalla.ttf", "Courier New", Courier, monospace;
+  font-family: "Cairo", sans-serif;
 }
 li {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 a {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 h1,
 h2,
@@ -2402,28 +2386,238 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 a,
 img,
 span,
 button {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 button {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 address {
   font-style: normal;
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 body {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 * {
-  font-family: "majalla.ttf", sans-serif;
+  font-family: "Cairo", sans-serif;
+}
+/* whatsapp icon */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Offset-x | Offset-y | blur-radius | spread-radius | color */
+.shadowBox {
+  -webkit-box-shadow: var(--offsetX) var(--offsetY) var(--blurRadius)
+    var(--spreadRadius) var(--colorShadow);
+  -moz-box-shadow: var(--offsetX) var(--offsetY) var(--blurRadius)
+    var(--spreadRadius) var(--colorShadow);
+  box-shadow: var(--offsetX) var(--offsetY) var(--blurRadius)
+    var(--spreadRadius) var(--colorShadow);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 8;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+@media (max-width: 360px) {
+  .nav-bottom {
+    width: 320px;
+  }
+}
+
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  z-index: 8;
+  transition: 0.3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #25dcb2;
+  box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+}
+
+.circle-anime {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background-color: rgb(119, 187, 74);
+  animation: pulse 1.2s 4s ease 4;
+}
+
+.popup-whatsapp {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  bottom: 85px;
+  right: 6px;
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  animation: slideInRight 0.6s 0s both;
+}
+
+.popup-whatsapp > div {
+  margin: 5px;
+}
+
+@media (max-width: 680px) {
+  .popup-whatsapp p {
+    font-size: 0.9em;
+  }
+}
+
+.popup-whatsapp .content-whatsapp .-top p {
+  color: rgb(88, 88, 88);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.closePopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0px 0px 15px 0px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(247, 96, 96);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+
+.closePopup:hover {
+  background-color: rgb(247, 29, 29);
+  transition: 0.3s;
+}
+
+.send-msPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0px 0px 0px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+
+.send-msPopup:hover {
+  background-color: #f8f8f8;
+  transition: 0.3s;
+}
+
+.is-active-whatsapp-popup {
+  display: flex;
+  animation: slideInRight 0.6s 0s both;
+}
+
+input.whats-input[type="text"] {
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0px solid #ffffff;
+  border-radius: 20px;
+  font-size: 1em;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 10px;
+  transition: width 0.3s ease-in-out;
+  outline: none;
+}
+
+@media (max-width: 420px) {
+  input.whats-input[type="text"] {
+    width: calc(250px - 25px);
+  }
+}
+
+input.whats-input::placeholder {
+  color: rgba(68, 68, 68, 0.705);
+  opacity: 1;
+}
+
+input.whats-input[type="text"]:focus {
+  background-color: #f8f8f8;
+}
+
+.icon-whatsapp-small {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-whatsapp {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-font-color {
+  color: #ffffff;
+}
+
+.icon-font-color--black {
+  color: #333333;
 }
