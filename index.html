@@ -139,7 +139,9 @@
       </div>
 
       <div class="header-bottom">
-        <div class="contain">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
           <div
             href="#"
             class="d-flex justify-content-between flex-row flex-nowrap mobhead"
@@ -221,26 +223,7 @@
             </div>
           </div>
 
-          <nav class="navbar" data-navbar>
-            <div class="navbar-top">
-              <a href="#" class="logo w-50">
-                <img
-                  src="./assets/images/aktal logo.png"
-                  alt="aktal logo"
-                  width="90px"
-                  class="w-100"
-                />
-              </a>
-
-              <button
-                class="nav-close-btn"
-                data-nav-close-btn
-                aria-label="Close Menu"
-              >
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </div>
-
+          <nav class="navbar d-flex" data-navbar>
             <div class="navbar-bottom">
               <ul class="navbar-list">
                 <li>
@@ -277,6 +260,24 @@
               </ul>
             </div>
           </nav>
+          <div class="lang-btn pb-2 d-none d-lg-block">
+            <div class="dropdown">
+              <button
+                class="btn main-col main-col:hover dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-end" href="#">العربية</a></li>
+                <li>
+                  <a class="dropdown-item text-end" href="#">الانجليزية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -985,8 +986,12 @@
     <footer class="footer">
       <div class="footer-top w-100">
         <div class="container">
-          <div class="row d-flex justify-content-between">
-            <div class="col-md-6 col-sm-12">
+          <div
+            class="row d-flex justify-content-between align-items-center flex-nowrap"
+          >
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
               <div class="footer-brand">
                 <a href="#">
                   <img
@@ -1030,91 +1035,114 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="footer-link-box d-flex flex-column">
-                <ul class="footer-list">
-                  <li>
-                    <p class="footer-list-title p">عن الشركة</p>
-                  </li>
-                  <div>
-                    <ul class="d-flex flex-column flex-lg-row">
-                      <li>
-                        <a href="#about" class="footer-link px-2">من نحن</a>
-                      </li>
-
-                      <li>
-                        <a href="#service" class="footer-link px-2">الخدمات</a>
-                      </li>
-
-                      <li>
-                        <a href="#blog" class="footer-link px-2"
-                          >الموقع علي الخريطة</a
-                        >
-                      </li>
-                      <li>
-                        <a href="./offers.html" class="footer-link px-2"
-                          >العروض</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </ul>
-                <ul class="footer-list">
-                  <li>
-                    <p class="footer-list-title p">تواصل معنا</p>
-                  </li>
-                  <ul class="social-list">
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title p">عن الشركة</p>
+                </li>
+                <div>
+                  <ul class="d-flex flex-column">
                     <li>
-                      <a
-                        href="https://twitter.com/aktal_sa"
-                        class="header-top-social-link"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-x-twitter"></i>
-                      </a>
+                      <a href="#about" class="footer-link px-2">من نحن</a>
                     </li>
 
                     <li>
-                      <a
-                        href="https://www.instagram.com/aktal_sa"
-                        class="header-top-social-link"
-                        target="_blank"
-                      >
-                        <ion-icon name="logo-instagram"></ion-icon>
-                      </a>
+                      <a href="#service" class="footer-link px-2">الخدمات</a>
                     </li>
 
                     <li>
-                      <a
-                        href="https://www.snapchat.com/add/aktal_sa"
-                        class="header-top-social-link"
-                        target="_blank"
+                      <a href="#blog" class="footer-link px-2"
+                        >الموقع علي الخريطة</a
                       >
-                        <ion-icon name="logo-snapchat"></ion-icon>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="https://www.youtube.com/c/AktalRealEstate"
-                        class="header-top-social-link"
-                        target="_blank"
-                      >
-                        <ion-icon name="logo-youtube"></ion-icon>
-                      </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
-                        class="header-top-social-link"
-                        target="_blank"
+                      <a href="./offers.html" class="footer-link px-2"
+                        >العروض</a
                       >
-                        <i class="fa-brands fa-tiktok"></i>
-                      </a>
                     </li>
                   </ul>
+                </div>
+              </ul>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 align-self-baseline text-end d-flex flex-column align-items-center"
+            >
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title p">تواصل معنا</p>
+                </li>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://twitter.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.snapchat.com/add/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-snapchat"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.youtube.com/c/AktalRealEstate"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                  </li>
                 </ul>
-              </div>
+                <li class="pt-5">
+                  <div class="apps footer-list">
+                    <div class="head">
+                      <p class="footer-list-title p">تحميل التطبيق</p>
+                    </div>
+                    <div class="logos-apps d-flex">
+                      <img
+                        src="./assets/images/appstore.svg"
+                        alt=""
+                        class="w-25 ps-2"
+                      />
+                      <img
+                        src="./assets/images/googleplay.svg"
+                        alt=""
+                        class="w-25"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

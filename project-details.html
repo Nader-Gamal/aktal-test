@@ -41,7 +41,7 @@
   <header class="header" data-header>
     <div class="overlay" data-overlay></div>
     <div class="header-top">
-      <div class="contain d-flex flex-row-reverse py-2">
+      <div class="contain  d-flex flex-row-reverse py-2">
         <ul class="header-top-list">
           <li>
             <a href="tel:+966920033262" class="header-top-link">
@@ -115,8 +115,10 @@
       </div>
     </div>
 
-    <div class="header-bottom">
-      <div class="contain">
+    <div class="header-bottom shadow-lg">
+      <div
+        class="container d-flex justify-content-between align-items-center"
+      >
         <div
           href="#"
           class="d-flex justify-content-between flex-row flex-nowrap mobhead"
@@ -198,26 +200,7 @@
           </div>
         </div>
 
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo w-50">
-              <img
-                src="./assets/images/aktal logo.png"
-                alt="aktal logo"
-                width="90px"
-                class="w-100"
-              />
-            </a>
-
-            <button
-              class="nav-close-btn"
-              data-nav-close-btn
-              aria-label="Close Menu"
-            >
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </div>
-
+        <nav class="navbar d-flex" data-navbar>
           <div class="navbar-bottom">
             <ul class="navbar-list">
               <li>
@@ -254,6 +237,25 @@
             </ul>
           </div>
         </nav>
+        <div class="lang-btn pb-2 d-none d-lg-block">
+          <div class="dropdown">
+            <button
+              class="btn main-col main-col:hover dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-globe"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-end" href="#">العربية</a></li>
+              <li>
+                <a class="dropdown-item text-end" href="#">الانجليزية</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 <!-- 
@@ -937,192 +939,166 @@
   -->
 
   <footer class="footer">
-    <div class="footer-top">
-      <div class="contain">
-        <div class="footer-brand">
-          <a href="#">
-            <img
-              src="./assets/images/aktal logo footer.png"
-              alt="Homeverse logo"
-              width="180px"
-              class="mb-2 pb-5"
-            />
-          </a>
-          <!-- 
-          <p class="section-text">
-            تقدم شركة أكتال العقارية للمشـروع الخدمات التسـويقية الكاملة
-            وتقديم الخدمات اللوجسـتية وإدارة المبيعات بشكل احترافي وتقديم
-            الحلول البنكية والعمل على الإنتاج الرقمي وتقديم تقارير الاعمال.
-          </p> -->
-
-          <ul class="contact-list">
-            <li>
-              <a href="#" class="contact-link">
-                <ion-icon name="location-outline"></ion-icon>
-
-                <span>الرياض, السعودية</span>
+    <div class="footer-top w-100">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-between align-items-center flex-nowrap"
+        >
+          <div
+            class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+          >
+            <div class="footer-brand">
+              <a href="#">
+                <img
+                  src="./assets/images/aktal logo footer.png"
+                  alt="Homeverse logo"
+                  width="180px"
+                  class="mb-2 pb-5"
+                />
               </a>
-            </li>
+              <!-- 
+              <p class="section-text">
+                تقدم شركة أكتال العقارية للمشـروع الخدمات التسـويقية الكاملة
+                وتقديم الخدمات اللوجسـتية وإدارة المبيعات بشكل احترافي وتقديم
+                الحلول البنكية والعمل على الإنتاج الرقمي وتقديم تقارير الاعمال.
+              </p> -->
 
-            <li>
-              <a href="tel:+0123456789" class="contact-link">
-                <ion-icon name="call-outline"></ion-icon>
+              <ul class="contact-list">
+                <li>
+                  <a href="#" class="contact-link">
+                    <ion-icon name="location-outline"></ion-icon>
 
-                <span>920033262</span>
-              </a>
-            </li>
+                    <span>الرياض, السعودية</span>
+                  </a>
+                </li>
 
-            <li>
-              <a href="mailto:contact@homeverse.com" class="contact-link">
-                <ion-icon name="mail-outline"></ion-icon>
+                <li>
+                  <a href="tel:+0123456789" class="contact-link">
+                    <ion-icon name="call-outline"></ion-icon>
 
-                <span>info@aktal.com.sa</span>
-              </a>
-            </li>
-          </ul>
+                    <span>920033262</span>
+                  </a>
+                </li>
 
-          <ul class="social-list">
-            <li>
-              <a
-                href="https://twitter.com/aktal_sa"
-                class="header-top-social-link"
-                target="_blank"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
+                <li>
+                  <a href="mailto:contact@homeverse.com" class="contact-link">
+                    <ion-icon name="mail-outline"></ion-icon>
 
-            <li>
-              <a
-                href="https://www.instagram.com/aktal_sa"
-                class="header-top-social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+                    <span>info@aktal.com.sa</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+          >
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title p">عن الشركة</p>
+              </li>
+              <div>
+                <ul class="d-flex flex-column">
+                  <li>
+                    <a href="#about" class="footer-link px-2">من نحن</a>
+                  </li>
 
-            <li>
-              <a
-                href="https://www.snapchat.com/add/aktal_sa"
-                class="header-top-social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-snapchat"></ion-icon>
-              </a>
-            </li>
+                  <li>
+                    <a href="#service" class="footer-link px-2">الخدمات</a>
+                  </li>
 
-            <li>
-              <a
-                href="https://www.youtube.com/c/AktalRealEstate"
-                class="header-top-social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
-                class="header-top-social-link"
-                target="_blank"
-              >
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+                  <li>
+                    <a href="#blog" class="footer-link px-2"
+                      >الموقع علي الخريطة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./offers.html" class="footer-link px-2"
+                      >العروض</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+          <div
+            class="col-md-4 col-sm-12 align-self-baseline text-end d-flex flex-column align-items-center"
+          >
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title p">تواصل معنا</p>
+              </li>
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://twitter.com/aktal_sa"
+                    class="header-top-social-link"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
 
-        <div class="footer-link-box">
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">عن الشركة</p>
-            </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/aktal_sa"
+                    class="header-top-social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
 
-            <li>
-              <a href="#" class="footer-link">من نحن</a>
-            </li>
+                <li>
+                  <a
+                    href="https://www.snapchat.com/add/aktal_sa"
+                    class="header-top-social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-snapchat"></ion-icon>
+                  </a>
+                </li>
 
-            <li>
-              <a href="#" class="footer-link">المقالات</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">الخدمات</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">الموقع علي الخريطة</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">الاسئلة المتكررة</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">تواصل معنا</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">الخدمات</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">الحجزات</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">المفضلة</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">تسجيل دخول</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">حسابي</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">الشروط والاحكام</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">العروض</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">خدمة العملاء</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">تسجيل الدخول</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">حسابي</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">المفضلة</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">العنوان</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">تواصل معنا</a>
-            </li>
-          </ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/c/AktalRealEstate"
+                    class="header-top-social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                    class="header-top-social-link"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+              <li class="pt-5">
+                <div class="apps footer-list">
+                  <div class="head">
+                    <p class="footer-list-title p">تحميل التطبيق</p>
+                  </div>
+                  <div class="logos-apps d-flex">
+                    <img
+                      src="./assets/images/appstore.svg"
+                      alt=""
+                      class="w-25 ps-2"
+                    />
+                    <img
+                      src="./assets/images/googleplay.svg"
+                      alt=""
+                      class="w-25"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

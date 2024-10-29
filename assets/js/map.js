@@ -25,66 +25,270 @@ var group3 = L.markerClusterGroup();
 // Add markers to group1
 group1.addLayer(
   L.marker([24.7136, 46.6753], { icon: blueIcon }).bindPopup(
-    "Group 1, Marker 1"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/1.jpeg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 1</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group1.addLayer(
   L.marker([24.7236, 46.6853], { icon: blueIcon }).bindPopup(
-    "Group 1, Marker 2"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/2.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 2</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group1.addLayer(
   L.marker([24.7336, 46.6953], { icon: blueIcon }).bindPopup(
-    "Group 1, Marker 3"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/4.png" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 3</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group1.addLayer(
   L.marker([24.7436, 46.6553], { icon: blueIcon }).bindPopup(
-    "Group 1, Marker 4"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/5.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 4</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 
 // Add markers to group2
 group2.addLayer(
   L.marker([24.8436, 47.7053], { icon: blueIcon }).bindPopup(
-    "Group 2, Marker 1"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/5.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 5</h3>
+      <div class="author">
+        <span class="badge bg-danger pt-1 " style="font-size: 1em;">مباع</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group2.addLayer(
   L.marker([24.8536, 47.7153], { icon: blueIcon }).bindPopup(
-    "Group 2, Marker 2"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/6.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 6</h3>
+      <div class="author">
+        <span class="badge bg-danger pt-1 " style="font-size: 1em;">مباع</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group2.addLayer(
   L.marker([24.8636, 47.7253], { icon: blueIcon }).bindPopup(
-    "Group 2, Marker 3"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/7.png" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 7</h3>
+      <div class="author">
+        <span class="badge bg-danger pt-1 " style="font-size: 1em;">مباع</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 
 // Add markers to group3
 group3.addLayer(
   L.marker([23.7736, 49.7353], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 1"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/3.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 8</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group3.addLayer(
   L.marker([23.7836, 49.7453], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 2"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/5.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 9</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group3.addLayer(
   L.marker([23.7936, 49.7553], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 3"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/7.png" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 9</h3>
+      <div class="author">
+        <span class="badge bg-danger pt-1 " style="font-size: 1em;">مباع</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group3.addLayer(
   L.marker([23.8936, 49.7553], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 4"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/2.jpg" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 10</h3>
+      <div class="author">
+        <span class="badge bg-danger pt-1 " style="font-size: 1em;">مباع</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 group3.addLayer(
   L.marker([23.9936, 49.7553], { icon: blueIcon }).bindPopup(
-    "Group 3, Marker 5"
+    `
+    <a href="./falt-details.html">
+      <div style="text-align: center;">
+      <img 
+        src="./image/7.png" 
+        alt="Popup Image" 
+        style="width: 268px; height: auto; border-radius: 8px; margin-bottom: 8px;"
+        class="pb-1"
+      />
+      <div class="d-flex justify-content-around">
+      <h3 style="margin: 5px 0; font-size: 1.2em; color: #25439b;">مشروع 11</h3>
+      <div class="author">
+        <span class="badge main-col pt-1 " style="font-size: 1em;">متاح</span>
+      </div>
+      </div>
+      </div>
+    </a>
+  `
   )
 );
 
