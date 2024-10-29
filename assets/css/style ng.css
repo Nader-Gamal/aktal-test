@@ -975,7 +975,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 15px;
 }
 
@@ -1587,10 +1587,6 @@ a {
 .footer-top {
   padding-top: 80px;
   padding-bottom: 40px;
-}
-
-.footer-brand {
-  margin-bottom: 70px;
 }
 
 .footer-brand .logo {
@@ -2287,6 +2283,9 @@ a {
     justify-content: space-between;
     max-width: 90%;
   }
+  .abs-img {
+    display: none !important;
+  }
   .about .quality {
     margin-left: -5px;
   }
@@ -2323,7 +2322,7 @@ a {
   }
   .about-comp {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
   }
 }
 
@@ -2344,8 +2343,8 @@ a {
   background-size: cover !important; /* Ensures the image covers the entire span */
   background-position: center !important; /* Centers the image within the span */
   border-radius: 50% !important; /* Keeps the circular shape */
-  width: 40px; /* Adjust width as needed */
-  height: 40px; /* Adjust height as needed */
+  width: 37px; /* Adjust width as needed */
+  height: 37px; /* Adjust height as needed */
   display: inline-block; /* Ensures the span displays correctly */
   color: #fff;
   font-size: large;
