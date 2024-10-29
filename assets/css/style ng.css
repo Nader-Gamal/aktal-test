@@ -1621,6 +1621,7 @@ a {
 .social-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -1955,6 +1956,7 @@ a {
   /**
    * HEADER
    */
+
   .header-top-list,
   .header-top .wrapper {
     gap: 30px;
@@ -2074,7 +2076,14 @@ a {
 /**
  * responsive for larger than 1200px screen
  */
-
+@media (max-width: 1200px) {
+  .mobhead {
+    width: 100%;
+  }
+  .lang-btn {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
   /**
    * CUSTOM PROPERTY
@@ -2218,6 +2227,9 @@ a {
 
 /* RESET MOBILE VIEW */
 @media only screen and (max-width: 768px) {
+  .mobhead {
+    width: 100%;
+  }
   .header-top {
     display: none;
   }
