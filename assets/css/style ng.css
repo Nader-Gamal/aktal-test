@@ -2335,14 +2335,26 @@ a {
   .offer-mob .txt h5 {
     text-align: center;
   }
+  .card-list {
+    display: flex;
+    flex-direction: column !important;
+  }
   .card-item {
     display: flex;
+    flex-direction: row !important;
     justify-content: space-around;
   }
   .card-item {
     display: flex;
     flex-direction: column;
-    justify-content: end !important;
+    justify-content: start !important;
+  }
+  .txt .card-text {
+    padding-top: 0.5 rem;
+    padding-right: 1.5rem;
+  }
+  .largeScreen {
+    display: none;
   }
 }
 
