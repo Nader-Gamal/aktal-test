@@ -2324,6 +2324,26 @@ a {
     text-align: center;
     margin: 3rem 0;
   }
+  .offer-mob {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .offer-mob img {
+    width: 60% !important;
+    margin: auto;
+  }
+  .offer-mob .txt h5 {
+    text-align: center;
+  }
+  .card-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end !important;
+  }
 }
 
 .offer-bage {
@@ -2396,7 +2416,12 @@ a {
 .progAvil {
   background-color: #211c4f;
 }
-
+.bg-secondr {
+  background-color: #211c4f;
+}
+.text-second {
+  color: #211c4f;
+}
 .progress,
 .progress-stacked {
   border-radius: 0% !important;

@@ -1,38 +1,60 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>المشاريع</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اكتال العقارية</title>
 
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link
-    rel="shortcut icon"
-    href="./assets/images/aktal logo footer.png"
-    type="image/svg+xml"
-  />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/aktal logo footer.png"
+      type="image/svg+xml"
+    />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <script
-    src="https://kit.fontawesome.com/2655b3b7cf.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./assets/css/style ng.css" />
-
-  <!-- 
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 <body>
   <!-- 
     - #HEADER
@@ -115,7 +137,7 @@
       </div>
     </div>
 
-    <div class="header-bottom">
+    <div class="header-bottom shadow-lg">
       <div
         class="container d-flex justify-content-between align-items-center"
       >
@@ -302,7 +324,7 @@
           <a href="./falt-details.html" class="card text-bg-dark">
             <img src="./image/2.jpg" class="card-img" alt="..." />
             <div class="card-img-overlay dark-overlay">
-              <div class="card-badge orange px-4 py-2">للبيع</div>
+              <div class="card-badge orange px-4 py-2">متاح</div>
               <h5 class="card-title mt-5 text-center">فيلا 1</h5>
               <h6 class="card-title mt-2 text-center">34,900 رس</h6>
               <p class="card-text">
@@ -343,7 +365,7 @@
             <a href="./falt-details.html" class="card text-bg-dark">
               <img src="./image/1.jpeg" class="card-img" alt="..." />
               <div class="card-img-overlay dark-overlay">
-                <div class="card-badge orange px-4 py-2">للبيع</div>
+                <div class="card-badge bg-danger px-4 py-2">مباعة</div>
                 <h5 class="card-title mt-5 text-center">فيلا 2</h5>
                 <h6 class="card-title mt-2 text-center">34,900 رس</h6>
                 <p class="card-text">
@@ -384,7 +406,7 @@
               <a href="./falt-details.html" class="card text-bg-dark">
                 <img src="./image/4.png" class="card-img" alt="..." />
                 <div class="card-img-overlay dark-overlay">
-                  <div class="card-badge orange px-4 py-2">للبيع</div>
+                  <div class="card-badge orange px-4 py-2">متاح</div>
                   <h5 class="card-title mt-5 text-center">فيلا 3</h5>
                   <h6 class="card-title mt-2 text-center">34,900 رس</h6>
                   <p class="card-text">
@@ -425,7 +447,7 @@
                 <a href="./falt-details.html" class="card text-bg-dark">
                   <img src="./image/5.jpg" class="card-img" alt="..." />
                   <div class="card-img-overlay dark-overlay">
-                    <div class="card-badge orange px-4 py-2">للبيع</div>
+                    <div class="card-badge orange px-4 py-2">متاح</div>
                     <h5 class="card-title mt-5 text-center">فيلا 4</h5>
                     <h6 class="card-title mt-2 text-center">34,900 رس</h6>
                     <p class="card-text">
@@ -466,7 +488,7 @@
                   <a href="./falt-details.html" class="card text-bg-dark">
                     <img src="./image/6.jpg" class="card-img" alt="..." />
                     <div class="card-img-overlay dark-overlay">
-                      <div class="card-badge orange px-4 py-2">للبيع</div>
+                      <div class="card-badge bg-secondr px-4 py-2">قريبا</div>
                       <h5 class="card-title mt-5 text-center">فيلا 5</h5>
                       <h6 class="card-title mt-2 text-center">34,900 رس</h6>
                       <p class="card-text">
@@ -507,7 +529,7 @@
                     <a href="./falt-details.html" class="card text-bg-dark">
                       <img src="./image/7.png" class="card-img" alt="..." />
                       <div class="card-img-overlay dark-overlay">
-                        <div class="card-badge orange px-4 py-2">للبيع</div>
+                        <div class="card-badge bg-d px-4 py-2">مباعة</div>
                         <h5 class="card-title mt-5 text-center">فيلا 6</h5>
                         <h6 class="card-title mt-2 text-center">34,900 رس</h6>
                         <p class="card-text">
