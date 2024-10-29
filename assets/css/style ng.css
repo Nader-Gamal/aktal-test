@@ -209,6 +209,16 @@ body {
   background-color: transparent;
   border: #000 solid 1px;
 }
+.revMain-col {
+  background-color: transparent;
+  border: #000 solid 1px;
+}
+.revMain-col:hover {
+  background-color: #4c7ce3;
+  border: #4c7ce3 solid 1px;
+  color: #fff;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -557,6 +567,7 @@ a {
 .offcanvas {
   z-index: 999999;
   direction: ltr;
+  max-width: 80%;
 }
 /*-----------------------------------*\
   #HERO
@@ -2310,6 +2321,10 @@ a {
   .mob-nav {
     display: block !important;
   }
+  .about-comp {
+    text-align: center;
+    margin-top: 3rem;
+  }
 }
 
 .offer-bage {
@@ -2325,12 +2340,19 @@ a {
   height: 550px;
 }
 .leaflet-marker-icon span {
-  background-color: #4c7ce3 !important;
-  border-radius: 50% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  color: #fff !important;
+  background-image: url("../images/MAP-circle.png") !important;
+  background-size: cover !important; /* Ensures the image covers the entire span */
+  background-position: center !important; /* Centers the image within the span */
+  border-radius: 50% !important; /* Keeps the circular shape */
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  display: inline-block; /* Ensures the span displays correctly */
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  padding-top: 5px;
 }
+
 .marker-cluster-small {
   background-color: transparent !important;
 }
