@@ -41,7 +41,7 @@
   <header class="header" data-header>
     <div class="overlay" data-overlay></div>
     <div class="header-top">
-      <div class="contain  d-flex flex-row-reverse py-2">
+      <div class="contain d-flex flex-row-reverse py-2">
         <ul class="header-top-list">
           <li>
             <a href="tel:+966920033262" class="header-top-link">
@@ -115,7 +115,7 @@
       </div>
     </div>
 
-    <div class="header-bottom shadow-lg">
+    <div class="header-bottom">
       <div
         class="container d-flex justify-content-between align-items-center"
       >
@@ -182,7 +182,9 @@
 
               <ul class="mob-nav-items">
                 <li class="d-flex my-4 mx-2 px-2">
-                  <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                  <i
+                    class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                  ></i>
                   <a href="./index.html#blog"
                     ><p class="text-dark">اماكن تواجدنا</p></a
                   >
@@ -194,6 +196,10 @@
                   <a href="./contact.html"
                     ><p class="text-dark">تواصل معنا</p></a
                   >
+                </li>
+                <li class="d-flex my-4 mx-2 px-2">
+                  <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                  <a href="./contact.html"><p class="text-dark">اللغة</p></a>
                 </li>
               </ul>
             </div>
@@ -237,10 +243,10 @@
             </ul>
           </div>
         </nav>
-        <div class="lang-btn pb-2 d-none d-lg-block">
+        <div class="lang-btn pb-2">
           <div class="dropdown">
             <button
-              class="btn main-col main-col:hover dropdown-toggle"
+              class="btn revMain-col dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -258,397 +264,8 @@
       </div>
     </div>
   </header>
-<!-- 
-  <section class="property" id="property">
-    <div class="contain">
-      <p class="section-subtitle">العروض</p>
 
-      <h2 class="h2 section-title">الوحدات المتاحة</h2>
 
-      <ul class="property-list has-scrollbar">
-        <li>
-          <div class="property-card">
-            <figure class="card-banner">
-              <a href="./falt-details.html">
-                <img
-                  src="./assets/images/property-1.jpg"
-                  alt="New Apartment Nice View"
-                  class="w-100"
-                />
-              </a>
-
-              <div class="card-badge green">للايجار</div>
-
-              <div class="banner-actions justify-content-between">
-                <div>
-                  <button class="banner-actions-btna">
-                    <ion-icon name="location"></ion-icon>
-
-                    <pspan class="mb-1">مشروع فيرا فيلا في القمراء 3</pspan>
-                  </button>
-                </div>
-
-                <div class="d-flex">
-                  <button class="banner-actions-btna mx-3">
-                    <ion-icon name="camera"></ion-icon>
-
-                    <span>4</span>
-                  </button>
-
-                  <button class="banner-actions-btna">
-                    <ion-icon name="film"></ion-icon>
-
-                    <span>2</span>
-                  </button>
-                </div>
-              </div>
-            </figure>
-
-            <div class="card-content">
-              <div class="card-price">
-                <strong>ر.س</strong><strong> 34,900 </strong>
-              </div>
-
-              <h3 class="h3 card-title">
-                <a href="./falt-details.html">فيلا جديدة باطلالة جميلة</a>
-              </h3>
-
-              <p class="card-text">
-                منزل عائلي ضخم وجميل في قلب المدينة تم تجديدة كلياً
-              </p>
-
-              <ul class="card-list justify-content-center">
-                <li class="card-item">
-                  <strong>3</strong>
-
-                  <ion-icon name="bed-outline"></ion-icon>
-
-                  <span>Bedrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>2</strong>
-
-                  <ion-icon name="man-outline"></ion-icon>
-
-                  <span>Bathrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>3450</strong>
-
-                  <ion-icon name="square-outline"></ion-icon>
-
-                  <span>Square Ft</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-footer justify-content-center">
-              <div class="card-footer-actions">
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="resize-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="add-circle-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="property-card">
-            <figure class="card-banner">
-              <a href="./falt-details.html">
-                <img
-                  src="./assets/images/property-2.jpg"
-                  alt="New Apartment Nice View"
-                  class="w-100"
-                />
-              </a>
-
-              <div class="card-badge orange">للبيع</div>
-
-              <div class="banner-actions justify-content-between">
-                <div>
-                  <button class="banner-actions-btna">
-                    <ion-icon name="location"></ion-icon>
-
-                    <pspan class="mb-1">مشروع فيرا فيلا في القمراء 3</pspan>
-                  </button>
-                </div>
-
-                <div class="d-flex">
-                  <button class="banner-actions-btna mx-3">
-                    <ion-icon name="camera"></ion-icon>
-
-                    <span>4</span>
-                  </button>
-
-                  <button class="banner-actions-btna">
-                    <ion-icon name="film"></ion-icon>
-
-                    <span>2</span>
-                  </button>
-                </div>
-              </div>
-            </figure>
-
-            <div class="card-content">
-              <div class="card-price">
-                <strong>ر.س</strong><strong> 34,900 </strong>
-              </div>
-
-              <h3 class="h3 card-title">
-                <a href="./falt-details.html">فيلا جديدة باطلالة جميلة</a>
-              </h3>
-
-              <p class="card-text">
-                منزل عائلي ضخم وجميل في قلب المدينة تم تجديدة كلياً
-              </p>
-
-              <ul class="card-list justify-content-center">
-                <li class="card-item">
-                  <strong>3</strong>
-
-                  <ion-icon name="bed-outline"></ion-icon>
-
-                  <span>Bedrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>2</strong>
-
-                  <ion-icon name="man-outline"></ion-icon>
-
-                  <span>Bathrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>3450</strong>
-
-                  <ion-icon name="square-outline"></ion-icon>
-
-                  <span>Square Ft</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-footer justify-content-center">
-              <div class="card-footer-actions">
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="resize-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="add-circle-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="property-card">
-            <figure class="card-banner">
-              <a href="./falt-details.html">
-                <img
-                  src="./assets/images/property-3.jpg"
-                  alt="New Apartment Nice View"
-                  class="w-100"
-                />
-              </a>
-
-              <div class="card-badge orange">للبيع</div>
-
-              <div class="banner-actions justify-content-between">
-                <div>
-                  <button class="banner-actions-btna">
-                    <ion-icon name="location"></ion-icon>
-
-                    <pspan class="mb-1">مشروع فيرا فيلا في القمراء 3</pspan>
-                  </button>
-                </div>
-
-                <div class="d-flex">
-                  <button class="banner-actions-btna mx-3">
-                    <ion-icon name="camera"></ion-icon>
-
-                    <span>4</span>
-                  </button>
-
-                  <button class="banner-actions-btna">
-                    <ion-icon name="film"></ion-icon>
-
-                    <span>2</span>
-                  </button>
-                </div>
-              </div>
-            </figure>
-
-            <div class="card-content">
-              <div class="card-price">
-                <strong>ر.س</strong><strong> 34,900 </strong>
-              </div>
-
-              <h3 class="h3 card-title">
-                <a href="./falt-details.html">فيلا جديدة باطلالة جميلة</a>
-              </h3>
-
-              <p class="card-text">
-                منزل عائلي ضخم وجميل في قلب المدينة تم تجديدة كلياً
-              </p>
-
-              <ul class="card-list justify-content-center">
-                <li class="card-item">
-                  <strong>3</strong>
-
-                  <ion-icon name="bed-outline"></ion-icon>
-
-                  <span>Bedrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>2</strong>
-
-                  <ion-icon name="man-outline"></ion-icon>
-
-                  <span>Bathrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>3450</strong>
-
-                  <ion-icon name="square-outline"></ion-icon>
-
-                  <span>Square Ft</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-footer justify-content-center">
-              <div class="card-footer-actions">
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="resize-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="add-circle-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="property-card">
-            <figure class="card-banner">
-              <a href="./falt-details.html">
-                <img
-                  src="./assets/images/property-4.png"
-                  alt="New Apartment Nice View"
-                  class="w-100"
-                />
-              </a>
-
-              <div class="card-badge orange">للبيع</div>
-
-              <div class="banner-actions justify-content-between">
-                <div>
-                  <button class="banner-actions-btna">
-                    <ion-icon name="location"></ion-icon>
-
-                    <pspan class="mb-1">مشروع فيرا فيلا في القمراء 3</pspan>
-                  </button>
-                </div>
-
-                <div class="d-flex">
-                  <button class="banner-actions-btna mx-3">
-                    <ion-icon name="camera"></ion-icon>
-
-                    <span>4</span>
-                  </button>
-
-                  <button class="banner-actions-btna">
-                    <ion-icon name="film"></ion-icon>
-
-                    <span>2</span>
-                  </button>
-                </div>
-              </div>
-            </figure>
-
-            <div class="card-content">
-              <div class="card-price">
-                <strong>ر.س</strong><strong> 34,900 </strong>
-              </div>
-
-              <h3 class="h3 card-title">
-                <a href="./falt-details.html">فيلا جديدة باطلالة جميلة</a>
-              </h3>
-
-              <p class="card-text">
-                منزل عائلي ضخم وجميل في قلب المدينة تم تجديدة كلياً
-              </p>
-
-              <ul class="card-list justify-content-center">
-                <li class="card-item">
-                  <strong>3</strong>
-
-                  <ion-icon name="bed-outline"></ion-icon>
-
-                  <span>Bedrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>2</strong>
-
-                  <ion-icon name="man-outline"></ion-icon>
-
-                  <span>Bathrooms</span>
-                </li>
-
-                <li class="card-item">
-                  <strong>3450</strong>
-
-                  <ion-icon name="square-outline"></ion-icon>
-
-                  <span>Square Ft</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-footer justify-content-center">
-              <div class="card-footer-actions">
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="resize-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-                <button class="card-footer-actions-btna">
-                  <ion-icon name="add-circle-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section> -->
 
   <section id="prj-details" class="project-details py-5">
     <div class="contain">
@@ -941,9 +558,7 @@
   <footer class="footer">
     <div class="footer-top w-100">
       <div class="container">
-        <div
-          class="row d-flex flex-row justify-content-between align-items-center"
-        >
+        <div class="row d-flex flex-row justify-content-between">
           <div
             class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
           >
@@ -993,7 +608,7 @@
           <div
             class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
           >
-            <ul class="footer-list">
+            <ul class="footer-list about-comp">
               <li>
                 <p class="footer-list-title p">عن الشركة</p>
               </li>
@@ -1022,7 +637,7 @@
             </ul>
           </div>
           <div
-            class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center"
+            class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
           >
             <ul class="footer-list">
               <li>
@@ -1080,20 +695,17 @@
               </ul>
               <li class="pt-5">
                 <div class="apps footer-list">
-                  <div class="head">
-                    <p class="footer-list-title p">تحميل التطبيق</p>
-                  </div>
-                  <div class="logos-apps d-flex justify-content-center">
-                    <img
-                      src="./assets/images/appstore.svg"
-                      alt=""
-                      class="w-25 ps-2"
-                    />
-                    <img
-                      src="./assets/images/googleplay.svg"
-                      alt=""
-                      class="w-25"
-                    />
+                  <div
+                    class="head d-flex justify-content-center align-content-center flex-column"
+                  >
+                    <p class="footer-list-title">
+                      <img
+                        src="./assets/images/faal.png"
+                        alt="faal"
+                        class="w-25 m-auto"
+                      />
+                    </p>
+                    <p>1200019381</p>
                   </div>
                 </div>
               </li>
