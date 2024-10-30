@@ -2337,21 +2337,25 @@ a {
   }
   .card-list {
     display: flex;
+    flex-direction: row !important;
+  }
+  .offer {
+    display: flex;
     flex-direction: column !important;
   }
-  .card-item {
+  .details {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content: space-around;
   }
   .card-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: start !important;
   }
   .txt .card-text {
-    padding-top: 0.5 rem;
-    padding-right: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
   }
   .largeScreen {
     display: none;
@@ -2684,4 +2688,7 @@ input.whats-input[type="text"]:focus {
 
 .icon-font-color--black {
   color: #333333;
+}
+ul {
+  padding-left: 0 !important;
 }
