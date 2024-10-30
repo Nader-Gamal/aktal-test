@@ -2314,9 +2314,7 @@ a {
   .blog iframe {
     padding-right: 1.5rem;
   }
-  .about iframe {
-    width: 400px !important;
-  }
+
   .mob-nav {
     display: block !important;
   }

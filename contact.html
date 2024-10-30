@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تواصل معنا</title>
+    <title>اكتال العقارية</title>
 
     <!-- 
     - favicon
@@ -24,13 +24,34 @@
     ></script>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <!-- 
     - google font link
   -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -38,6 +59,7 @@
     <!-- 
     - #HEADER
   -->
+
     <header class="header" data-header>
       <div class="overlay" data-overlay></div>
       <div class="header-top">
@@ -182,7 +204,9 @@
 
                 <ul class="mob-nav-items">
                   <li class="d-flex my-4 mx-2 px-2">
-                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <i
+                      class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                    ></i>
                     <a href="./index.html#blog"
                       ><p class="text-dark">اماكن تواجدنا</p></a
                     >
@@ -194,6 +218,10 @@
                     <a href="./contact.html"
                       ><p class="text-dark">تواصل معنا</p></a
                     >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <a href="./contact.html"><p class="text-dark">اللغة</p></a>
                   </li>
                 </ul>
               </div>
@@ -237,10 +265,10 @@
               </ul>
             </div>
           </nav>
-          <div class="lang-btn pb-2 d-none d-lg-block">
+          <div class="lang-btn pb-2">
             <div class="dropdown">
               <button
-                class="btn main-col main-col:hover dropdown-toggle"
+                class="btn revMain-col dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -258,6 +286,7 @@
         </div>
       </div>
     </header>
+
     <!-- contact form -->
     <section class="about" id="about">
       <div class="contain">
@@ -321,15 +350,31 @@
             شكرا علي تواصلك معنا سنتصل بك قريبا!
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d28971.408084590475!2d46.6304324!3d24.8151009!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d24.815100899999997!2d46.6304324!5e0!3m2!1sen!2seg!4v1714905945823!5m2!1sen!2seg"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d28971.408084590475!2d46.6304324!3d24.8151009!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d24.815100899999997!2d46.6304324!5e0!3m2!1sen!2seg!4v1714905945823!5m2!1sen!2seg"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <style>
+          .map-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+          }
+
+          .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        </style>
       </div>
     </section>
     <!-- 
@@ -339,9 +384,7 @@
     <footer class="footer">
       <div class="footer-top w-100">
         <div class="container">
-          <div
-            class="row d-flex flex-row justify-content-between align-items-center"
-          >
+          <div class="row d-flex flex-row justify-content-between">
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
@@ -391,7 +434,7 @@
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
-              <ul class="footer-list">
+              <ul class="footer-list about-comp">
                 <li>
                   <p class="footer-list-title p">عن الشركة</p>
                 </li>
@@ -420,7 +463,7 @@
               </ul>
             </div>
             <div
-              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center"
+              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
             >
               <ul class="footer-list">
                 <li>
@@ -478,20 +521,17 @@
                 </ul>
                 <li class="pt-5">
                   <div class="apps footer-list">
-                    <div class="head">
-                      <p class="footer-list-title p">تحميل التطبيق</p>
-                    </div>
-                    <div class="logos-apps d-flex justify-content-center">
-                      <img
-                        src="./assets/images/appstore.svg"
-                        alt=""
-                        class="w-25 ps-2"
-                      />
-                      <img
-                        src="./assets/images/googleplay.svg"
-                        alt=""
-                        class="w-25"
-                      />
+                    <div
+                      class="head d-flex justify-content-center align-content-center flex-column"
+                    >
+                      <p class="footer-list-title">
+                        <img
+                          src="./assets/images/faal.png"
+                          alt="faal"
+                          class="w-25 m-auto"
+                        />
+                      </p>
+                      <p>1200019381</p>
                     </div>
                   </div>
                 </li>

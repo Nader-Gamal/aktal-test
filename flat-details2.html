@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>عقار رقم 3</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اكتال العقارية</title>
 
-      <!-- 
+    <!-- 
         - favicon
       -->
-      <link
-        rel="shortcut icon"
-        href="./assets/images/aktal logo footer.png"
-        type="image/svg+xml"
-      />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/aktal logo footer.png"
+      type="image/svg+xml"
+    />
 
-      <!-- 
+    <!-- 
         - custom css link
       -->
-      <script
-        src="https://kit.fontawesome.com/2655b3b7cf.js"
-        crossorigin="anonymous"
-      ></script>
-      <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="./assets/css/style ng.css" />
-      <!-- 
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- 
         - google font link
       -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <style>
+      p {
+        font-family: "Alegreya Sans";
+        font-weight: 200;
+      }
+      .flatDetails {
+        position: relative;
+        background-image: url(./image/2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-size: 100% 100%;
+        text-align: center;
+        height: 50vh;
+      }
+      .flatDetails::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Dark overlay effect */
+        z-index: 0; /* Places overlay behind text */
+      }
+      .flatDetails h4 {
+        position: relative;
+        color: white; /* Keeps text fully white */
+        z-index: 1; /* Places text above overlay */
+      }
+
+      .col3 {
+        width: 30%;
+        padding: 0 1%;
+      }
+      .icons-tabs {
+        top: 85%;
+        background-color: #fff;
+        padding: 2rem 0;
+        border-radius: 2rem;
+      }
+    </style>
     <header class="header" data-header>
       <div class="overlay" data-overlay></div>
       <div class="header-top">
@@ -181,7 +242,9 @@
 
                 <ul class="mob-nav-items">
                   <li class="d-flex my-4 mx-2 px-2">
-                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <i
+                      class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                    ></i>
                     <a href="./index.html#blog"
                       ><p class="text-dark">اماكن تواجدنا</p></a
                     >
@@ -193,6 +256,10 @@
                     <a href="./contact.html"
                       ><p class="text-dark">تواصل معنا</p></a
                     >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <a href="./contact.html"><p class="text-dark">اللغة</p></a>
                   </li>
                 </ul>
               </div>
@@ -236,10 +303,10 @@
               </ul>
             </div>
           </nav>
-          <div class="lang-btn pb-2 d-none d-lg-block">
+          <div class="lang-btn pb-2">
             <div class="dropdown">
               <button
-                class="btn main-col main-col:hover dropdown-toggle"
+                class="btn revMain-col dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -260,96 +327,45 @@
     <!-- 
     - #main
   -->
-    <div class="contain my-5">
-      <div class="d-flex justify-content-between">
-        <nav
-          style="
-            direction: ltr;
-            --bs-breadcrumb-divider: url(
-              &#34;data:image/svg + xml,
-              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
-            );
-          "
-          aria-label="breadcrumb"
-        >
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item projNext">
-              <a href="./project-details.html">الوحدات المتاحة</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              عقار رقم 9
-            </li>
-          </ol>
-        </nav>
-
-        <a class="btna" href="./intersted.html">سجل اهتمام</a>
+    <div class="position-relative">
+      <div
+        class="flatDetails d-flex flex-column justify-content-center align-items-center position-relative"
+      >
+        <h4><span class="text-white">فيلا 1</span></h4>
       </div>
-      <div class="my-3">
-        <h2>فيلا 1</h2>
-        <span class="badge text-bg-primary">للبيع</span>
-
-        <div class="my-4">
-          <div class="d-flex my-2">
-            <i class="fa-solid fa-location-dot px-2 icon-col"></i>
-            <h6>الموقع</h6>
-            <span class="px-2">القمراء 3, الرياض</span>
+      <div
+        class="icons-tabs shadow-lg container d-flex justify-content-center align-items-center position-absolute start-50 translate-middle-x"
+        style="transform: translateY(-50%)"
+      >
+        <div class="row w-100 d-flex justify-content-center align-items-center">
+          <div class="col-3 text-center d-flex flex-column align-items-center">
+            <img src="./assets/images/house.svg" alt="" class="mb-2" />
+            <span>القمراء 3, الرياض</span>
           </div>
-          <div class="d-flex my-2">
-            <i class="fa-solid fa-money-bill-wave px-2 icon-col"></i>
-            <h6>السعر</h6>
-            <span class="px-2"> 3,200,000 رس</span>
+          <div class="col-3 text-center d-flex flex-column align-items-center">
+            <img
+              src="./assets/images/money.png"
+              alt=""
+              class="mb-2"
+              width="35px"
+            />
+            <span>السعر 3,500,000</span>
           </div>
-          <div class="d-flex my-2">
-            <i class="fa-regular fa-building px-2 icon-col"></i>
-            <h6>رقم العقار</h6>
-            <span class="px-2"> 3</span>
+          <div class="col-3 text-center d-flex flex-column align-items-center">
+            <img src="./assets/images/house.svg" alt="" class="mb-2" />
+            <span>رقم العقار 8</span>
+          </div>
+          <div class="col-3 text-center d-flex flex-column align-items-center">
+            <img src="./assets/images/building.svg" alt="" class="mb-2" />
+            <span>عدد الغرف 6</span>
           </div>
         </div>
       </div>
-      <div class="mb-5">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner rounded-3 flat-imges">
-            <div class="carousel-item active">
-              <img src="./assets/images/blog-1.png" class="w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/blog-2.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/blog-3.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+    </div>
 
-      <div class="my-5">
-        <h2>مواصفات العقار</h2>
+    <section class="building-info container py-5 bg-white">
+      <div class="py-5">
+        <h2 class="pt-5">مواصفات العقار</h2>
         <div class="row">
           <div class="col-md-4">
             <div class="d-flex my-2">
@@ -419,8 +435,15 @@
             </div>
           </div>
         </div>
+        <a
+          href="./intersted.html"
+          class="d-flex justify-content-center align-items-center mt-5"
+        >
+          <button class="btna main-col" type="submit">سجل اهتمام</button>
+        </a>
       </div>
-    </div>
+    </section>
+
     <!-- fratures -->
 
     <section class="features">
@@ -562,12 +585,11 @@
     <!-- 
     - #FOOTER
   -->
+
     <footer class="footer">
       <div class="footer-top w-100">
         <div class="container">
-          <div
-            class="row d-flex flex-row justify-content-between align-items-center"
-          >
+          <div class="row d-flex flex-row justify-content-between">
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
@@ -617,7 +639,7 @@
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
-              <ul class="footer-list">
+              <ul class="footer-list about-comp">
                 <li>
                   <p class="footer-list-title p">عن الشركة</p>
                 </li>
@@ -646,7 +668,7 @@
               </ul>
             </div>
             <div
-              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center"
+              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
             >
               <ul class="footer-list">
                 <li>
@@ -704,20 +726,17 @@
                 </ul>
                 <li class="pt-5">
                   <div class="apps footer-list">
-                    <div class="head">
-                      <p class="footer-list-title p">تحميل التطبيق</p>
-                    </div>
-                    <div class="logos-apps d-flex justify-content-center">
-                      <img
-                        src="./assets/images/appstore.svg"
-                        alt=""
-                        class="w-25 ps-2"
-                      />
-                      <img
-                        src="./assets/images/googleplay.svg"
-                        alt=""
-                        class="w-25"
-                      />
+                    <div
+                      class="head d-flex justify-content-center align-content-center flex-column"
+                    >
+                      <p class="footer-list-title">
+                        <img
+                          src="./assets/images/faal.png"
+                          alt="faal"
+                          class="w-25 m-auto"
+                        />
+                      </p>
+                      <p>1200019381</p>
                     </div>
                   </div>
                 </li>
@@ -726,6 +745,7 @@
           </div>
         </div>
       </div>
+      <hr class="text-white" />
 
       <div class="footer-bottom">
         <div class="contain">

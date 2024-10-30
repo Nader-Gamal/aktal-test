@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>عقار رقم 3</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اكتال العقارية</title>
 
-      <!-- 
-        - favicon
-      -->
-      <link
-        rel="shortcut icon"
-        href="./assets/images/aktal logo footer.png"
-        type="image/svg+xml"
-      />
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/aktal logo footer.png"
+      type="image/svg+xml"
+    />
 
-      <!-- 
-        - custom css link
-      -->
-      <script
-        src="https://kit.fontawesome.com/2655b3b7cf.js"
-        crossorigin="anonymous"
-      ></script>
-      <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="./assets/css/style ng.css" />
-      <!-- 
-        - google font link
-      -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-    </head>
+    <!-- 
+    - custom css link
+  -->
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- 
+    - #HEADER
+  -->
+
     <header class="header" data-header>
       <div class="overlay" data-overlay></div>
       <div class="header-top">
@@ -181,7 +204,9 @@
 
                 <ul class="mob-nav-items">
                   <li class="d-flex my-4 mx-2 px-2">
-                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <i
+                      class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                    ></i>
                     <a href="./index.html#blog"
                       ><p class="text-dark">اماكن تواجدنا</p></a
                     >
@@ -193,6 +218,10 @@
                     <a href="./contact.html"
                       ><p class="text-dark">تواصل معنا</p></a
                     >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <a href="./contact.html"><p class="text-dark">اللغة</p></a>
                   </li>
                 </ul>
               </div>
@@ -236,10 +265,10 @@
               </ul>
             </div>
           </nav>
-          <div class="lang-btn pb-2 d-none d-lg-block">
+          <div class="lang-btn pb-2">
             <div class="dropdown">
               <button
-                class="btn main-col main-col:hover dropdown-toggle"
+                class="btn revMain-col dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -293,7 +322,7 @@
             </div>
           </form>
         </div>
-        <div><img src="./image/7.png" alt="" width="600" height="450" /></div>
+        <div><img src="./image/7.png" alt="" width="100%" /></div>
       </div>
     </section>
 
@@ -304,9 +333,7 @@
     <footer class="footer">
       <div class="footer-top w-100">
         <div class="container">
-          <div
-            class="row d-flex flex-row justify-content-between align-items-center"
-          >
+          <div class="row d-flex flex-row justify-content-between">
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
@@ -356,7 +383,7 @@
             <div
               class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
             >
-              <ul class="footer-list">
+              <ul class="footer-list about-comp">
                 <li>
                   <p class="footer-list-title p">عن الشركة</p>
                 </li>
@@ -385,7 +412,7 @@
               </ul>
             </div>
             <div
-              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center"
+              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
             >
               <ul class="footer-list">
                 <li>
@@ -443,20 +470,17 @@
                 </ul>
                 <li class="pt-5">
                   <div class="apps footer-list">
-                    <div class="head">
-                      <p class="footer-list-title p">تحميل التطبيق</p>
-                    </div>
-                    <div class="logos-apps d-flex justify-content-center">
-                      <img
-                        src="./assets/images/appstore.svg"
-                        alt=""
-                        class="w-25 ps-2"
-                      />
-                      <img
-                        src="./assets/images/googleplay.svg"
-                        alt=""
-                        class="w-25"
-                      />
+                    <div
+                      class="head d-flex justify-content-center align-content-center flex-column"
+                    >
+                      <p class="footer-list-title">
+                        <img
+                          src="./assets/images/faal.png"
+                          alt="faal"
+                          class="w-25 m-auto"
+                        />
+                      </p>
+                      <p>1200019381</p>
                     </div>
                   </div>
                 </li>
