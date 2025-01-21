@@ -2690,3 +2690,16 @@ input.whats-input[type="text"]:focus {
 ul {
   padding-left: 0 !important;
 }
+/* Apply h-100 on medium and large screens */
+@media (min-width: 768px) {
+  .responsive-height {
+    height: 100%;
+  }
+}
+
+/* Remove h-100 effect on small screens */
+@media (max-width: 767px) {
+  .responsive-height {
+    height: auto;
+  }
+}
